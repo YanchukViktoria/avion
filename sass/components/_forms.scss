@@ -1,0 +1,45 @@
+    // header serch
+.serch-form{
+    @include positioning(flex, _, _, center, _, _);
+}
+
+.serch-input{
+    border: none;
+}
+
+    //section-email
+.email-form{
+    background-color: $bg;
+    display: flex;
+}
+
+.email-input{
+    border: none;
+    margin: 0 auto 0 32px;
+    background: inherit;
+
+    &::placeholder{
+        color: $placeholder;
+    }
+
+    &:focus-within{
+        outline: none;
+        color: $placeholder;
+    }
+}
+
+    //footer form
+.join-form{
+    @include positioning(flex, _, _, center, _, _);
+    background-color: $footer-form;
+}
+
+.join-input{
+    border: none;
+    margin: 0 auto 0 32px;
+    background:  rgba(255, 255, 255, 0%);
+
+    &::placeholder{
+        color: $white;
+    }
+}

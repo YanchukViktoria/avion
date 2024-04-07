@@ -1,0 +1,14 @@
+.nav{
+    display: none;
+
+    &-list{
+
+        &-item{
+
+        }
+
+        &-link{
+            @include font-style(Satoshi, 16px, 400, 1.3, _, _, $light-purple);
+        }
+    }
+}

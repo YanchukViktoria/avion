@@ -1,0 +1,5 @@
+%btn{
+    @include font-style(Satoshi, 16px, 400, 1.5, _, _, _);
+    padding: 16px 118px;
+    background-color: $bg;
+}

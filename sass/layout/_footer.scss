@@ -1,0 +1,40 @@
+.footer{
+    padding: 40px 0 20px 0;
+    background-color: $dark-primary;
+
+    &-wrap{
+        @include positioning(flex, _, _, _, 40px 96px, wrap);
+    }
+
+    &-desc{
+        @include font-style(Satoshi, 14px, 400, 1.3, _, center, $white);
+    }
+}
+
+.categories-list, .menu-list, .company-list{
+    @include positioning(flex, column, _, _, 12px, _);
+}
+
+.categories-title, .menu-title, .company-title{
+    @include font-style( Clash Display, 16px, 400, 1.3, _, _, $white);
+    margin-bottom: 12px;
+}
+
+.categories-list-link, .menu-list-link, .company-list-link{
+    @include font-style( Satoshi, 14px, 400, 1.5, _, _, $white);
+}
+
+.join{
+    border-bottom: 1px solid $footer-br;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.join-title{
+    @include font-style(Clash Display, 16px, 400, 1.1, _, _, $white);
+    margin-bottom: 16px;
+}
+
+.cosial-list{
+    display: none;
+}

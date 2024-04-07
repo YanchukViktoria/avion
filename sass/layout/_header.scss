@@ -1,0 +1,27 @@
+.header{
+    padding: 20px 24px;
+
+    &-wrap{
+
+    }
+
+    &-wrap{
+
+    }
+
+    &-container{
+        @include positioning(flex, _, space-between, center, _, _);
+    }
+
+    &-wraper{
+        @include positioning(flex, _, space-between, center, 28px, _);
+    }
+}
+
+.search-container{
+    @include positioning(flex, _, _, center, _, _);
+}
+
+.user-tools{
+    display: none;
+}

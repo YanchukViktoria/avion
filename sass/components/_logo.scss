@@ -1,0 +1,4 @@
+.logo{
+    @include font-style(Clash Display, 24px, 400, 1.2, _, _, $dark-primary);
+    margin-right: auto;
+}

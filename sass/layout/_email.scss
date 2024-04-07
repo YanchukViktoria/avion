@@ -1,0 +1,13 @@
+.section-email{
+    padding: 48px 0 38px 0;
+
+    &-title{
+        @include font-style(Clash Display, 20px, 400, 1.4, _, center, $dark-primary);
+        margin-bottom: 16px;
+    }
+
+    &-desc{
+        @include font-style( Satoshi, 14px, 400, 1.5, _, center, $dark-primary);    
+        margin-bottom: 64px;
+    }
+}

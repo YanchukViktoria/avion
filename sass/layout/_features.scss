@@ -1,0 +1,23 @@
+.section-features{
+    padding: 48px 0 396px 0;
+    background-image: url("../img/features-bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+
+    &-title{
+        @include font-style(Clash Display, 20px, 400, 1.4, _, _, $dark-primary);
+        margin-bottom: 12px;
+        max-width: 274px;
+    }
+
+    &-desc{
+        @include font-style( Satoshi, 14px, 400, 1.5, _, _, $dark-primary);    
+        margin-bottom: 40px; 
+    }
+
+    &-narr{
+        @include font-style( Satoshi, 14px, 400, 1.5, _, _, $dark-primary);
+        margin-bottom: 64px;
+    }
+}
