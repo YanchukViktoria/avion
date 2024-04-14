@@ -25,12 +25,13 @@
 
                         <div class="search-container">          <!-- form-->
                             <form action="" class="serch-form">
-                                <input type="text" class="serch-input"><button class="serch-btn"></button>
+                                <input type="text" class="serch-input">
+                                <button class="serch-btn" >
+                                    <svg class="serch-svg" width="16" height="16">             <!-- loop -->
+                                        <use href="./symbol-defs.svg#icon-loupe"></use>
+                                    </svg>
+                                </button>
                             </form>
-
-                            <svg class="serch-svg" width="16" height="16">             <!-- loop -->
-                                <use href="./symbol-defs.svg#icon-loupe"></use>
-                            </svg>
                         </div>
                     </div>
 
@@ -40,29 +41,34 @@
                         </svg>
                     </button>
 
-                    <div class="user-tools">
-                        <a href="" class="basket-link">     <!-- basket-->
-                            <svg class="bascet-svg" width="16" height="16">
-                                <use href="./symbol-defs.svg#icon-backet"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="user link">       <!-- use-->
-                            <svg class="user-svg" width="16" height="16">
-                                <use href="./symbol-defs.svg#icon-user"></use>
-                            </svg>
-                        </a>
-                    </div>
+                    <ul class="user-list">
+                        <li class="user-list-item">
+                            <a href="#" class="basket-link">     <!-- basket-->
+                                <svg class="bascet-svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-backet"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="user-list-item">
+                            <a href="#" class="user link">       <!-- use-->
+                                <svg class="user-svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-user"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <nav class="nav">           <!--nav -->
                     <ul class="nav-list">
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Plant pots</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Ceramics</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Tables</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Chairs</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Crockery</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Tableware</a></li>
-                        <li class="nav-list-item"><a href="" class="nav-list-link">Cutlery</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Plant pots</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Ceramics</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Tables</a></li>
+                        <li class="nav-list-item"><a href="./product-listing.html" class="nav-list-link">Chairs</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Crockery</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Tableware</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Cutlery</a></li>
                     </ul>
                 </nav>
 
@@ -76,8 +82,8 @@
                 <div class="hero-container">
                     <h1 class="section-hero-title">The furniture brand for the future, with timeless designs</h1>
                     <p class="section-hero-desc">A new era in eco friendly furniture with Avelon, the French luxury retail brand with nice fonts, tasteful colors and a beautiful way to display things digitally using modern web technologies.</p>
-                </div>
                     <button class="hero-btn">View collection</button>
+                </div>
             </div>
         </section>
         <section class="section-characteristics">
@@ -120,79 +126,86 @@
         <section class="section-listing">
             <div class="container">
 
-                <h2 class="section-listing-title">New ceramics</h2>
+                <div class="listing-container">
+                    <h2 class="section-listing-title">New ceramics</h2>
 
-                <ul class="listing-list">
-                    <li class="listing-list-item">
-                        <img src="./img/vase.png" alt="" class="listing-list-img">
-                        <p class="listing-list-title">The Dandy chair</p>
-                        <p class="listing-list-price">£250</p>
-                    </li>
-                    <li class="listing-list-item">
-                        <img src="./img/lump.png" alt="" class="listing-list-img">
-                        <p class="listing-list-title">The Dandy chair</p>
-                        <p class="listing-list-price">£250</p>
-                    </li>
-                    <li class="listing-list-item">
-                        <img src="./img/grey-vase.png" alt="" class="listing-list-img">
-                        <p class="listing-list-title">The Dandy chair</p>
-                        <p class="listing-list-price">£250</p>
-                    </li>
-                    <li class="listing-list-item">
-                        <img src="./img/chair.png" alt="" class="listing-list-img">
-                        <p class="listing-list-title">The Dandy chair</p>
-                        <p class="listing-list-price">£250</p>
-                    </li>
-                </ul>
-
-                <button class="listing-btn">View collection</button>
+                    <ul class="listing-list">
+                        <li class="listing-list-item">
+                            <img src="./img/home-img/vase.png" alt="" class="listing-list-img">
+                            <p class="listing-list-title">Rustic Vase Set</p>
+                            <p class="listing-list-price">£155</p>
+                        </li>
+                        <li class="listing-list-item">
+                            <img src="./img/home-img/lump.png" alt="" class="listing-list-img">
+                            <p class="listing-list-title">The Lucy Lamp</p>
+                            <p class="listing-list-price">£399</p>
+                        </li>
+                        <li class="listing-list-item">
+                            <img src="./img/home-img/grey-vase.png" alt="" class="listing-list-img">
+                            <p class="listing-list-title">The Silky Vase</p>
+                            <p class="listing-list-price">£125</p>
+                        </li>
+                        <li class="listing-list-item">
+                            <img src="./img/home-img/chair.png" alt="" class="listing-list-img">
+                            <p class="listing-list-title">The Dandy chair</p>
+                            <p class="listing-list-price">£250</p>
+                        </li>
+                    </ul>
+    
+                    <button class="listing-btn">View collection</button>
+                </div>
             </div>
         </section>
         <section class="section-popular">
             <div class="container">
-                <h2 class="section-popular-title">Our popular products</h2>
 
-                <ul class="popular-list">
-                    <li class="popular-list-item">
-                        <img src="./img/lump.png" alt="" class="popular-list-img">
-                        <p class="popular-list-title">The Dandy chair</p>
-                        <p class="popular-list-price">£250</p>
-                    </li>
-                    <li class="popular-list-item">
-                        <img src="./img/vase.png" alt="" class="popular-list-img">
-                        <p class="popular-list-title">The Dandy chair</p>
-                        <p class="popular-list-price">£250</p>
-                    </li>
-                    <li class="popular-list-item">
-                        <img src="./img/sofa.png" alt="" class="popular-list-img">
-                        <p class="popular-list-title">The Poplar suede sofa</p>
-                        <p class="popular-list-price">£980</p>
-                    </li>
-                    <li class="popular-list-item">
-                        <img src="./img/chair.png" alt="" class="popular-list-img">
-                        <p class="popular-list-title">The Dandy chair</p>
-                        <p class="popular-list-price">£250</p>
-                    </li>
-                    <li class="popular-list-item">
-                        <img src="./img/rey-chair.png" alt="" class="popular-list-img">
-                        <p class="popular-list-title">The Dandy chair</p>
-                        <p class="popular-list-price">£250</p>
-                    </li>
-                </ul>
+                <div class="popular-container">
+                    <h2 class="section-popular-title">Our popular products</h2>
 
-                <button class="popular-btn">View collection</button>
+                    <ul class="popular-list">
+                        <li class="popular-list-item">
+                            <img src="./img/home-img/lump.png" alt="" class="popular-list-img">
+                            <p class="popular-list-title">The Dandy chair</p>
+                            <p class="popular-list-price">£399</p>
+                        </li>
+                        <li class="popular-list-item">
+                            <img src="./img/home-img/vase.png" alt="" class="popular-list-img">
+                            <p class="popular-list-title">The Dandy chair</p>
+                            <p class="popular-list-price">£155</p>
+                        </li>
+                        <li class="popular-list-item">
+                            <img src="./img/home-img/sofa.png" alt="" class="popular-list-img">
+                            <p class="popular-list-title">The Poplar suede sofa</p>
+                            <p class="popular-list-price">£980</p>
+                        </li>
+                        <li class="popular-list-item">
+                            <img src="./img/home-img/chair.png" alt="" class="popular-list-img">
+                            <p class="popular-list-title">The Dandy chair</p>
+                            <p class="popular-list-price">£250</p>
+                        </li>
+                        <li class="popular-list-item">
+                            <img src="./img/home-img/rey-chair.png" alt="" class="popular-list-img">
+                            <p class="popular-list-title">The Dandy chair</p>
+                            <p class="popular-list-price">£250</p>
+                        </li>
+                    </ul>
+    
+                    <button class="popular-btn">View collection</button>
+                </div>
             </div>
         </section>
         <section class="section-email">
             <div class="container">
 
-                <h2 class="section-email-title">Join the club and get the benefits</h2>
-                <p class="section-email-desc">Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
-
-                <form action="" class="email-form">
-                    <input type="text" class="email-input" placeholder="your@email.com">
-                    <button class="email-btn">Sign up</button>
-                </form>
+                <div class="email-container">
+                    <h2 class="section-email-title">Join the club and get the benefits</h2>
+                    <p class="section-email-desc">Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
+    
+                    <form action="" class="email-form">
+                        <input type="email" class="email-input" placeholder="your@email.com" name="user-email" required>
+                        <button class="email-btn">Sign up</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="section-features">
@@ -210,15 +223,15 @@
 
             <div class="footer-wrap">
 
-                <div class="categoriaes">
+                <div class="categories">
                     <p class="categories-title">Categories</p>
                     <ul class="categories-list">
-                        <li class="caregoriaes-list-item"><a href="" class="categories-list-link">Crockery</a></li>
-                        <li class="caregoriaes-list-item"><a href="" class="categories-list-link">Furniture</a></li>
-                        <li class="caregoriaes-list-item"><a href="" class="categories-list-link">Homeware</a></li>
-                        <li class="caregoriaes-list-item"><a href="" class="categories-list-link">Plant pots</a></li>
-                        <li class="caregoriaes-list-item"><a href="" class="categories-list-link">Chairs</a></li>
-                        <li class="caregoriaes-list-item"><a href="" class="categories-list-link">Crockery</a></li>
+                        <li class="caregories-list-item"><a href="" class="categories-list-link">Crockery</a></li>
+                        <li class="caregories-list-item"><a href="" class="categories-list-link">Furniture</a></li>
+                        <li class="caregories-list-item"><a href="" class="categories-list-link">Homeware</a></li>
+                        <li class="caregories-list-item"><a href="" class="categories-list-link">Plant pots</a></li>
+                        <li class="caregories-list-item"><a href="" class="categories-list-link">Chairs</a></li>
+                        <li class="caregories-list-item"><a href="" class="categories-list-link">Crockery</a></li>
                     </ul>
                 </div>
 
@@ -247,7 +260,7 @@
                 <div class="join">
                     <p class="join-title">Join our mailing list</p>
                     <form action="" class="join-form">
-                        <input type="text" class="join-input" placeholder="your@email.com">
+                        <input type="email" class="join-input" placeholder="your@email.com"name="user-email" required>
                         <button class="join-btn">Sign up</button>
                     </form>
                 </div>
@@ -255,7 +268,7 @@
 
             <div class="footer-container">
                 <p class="footer-desc">Copyright 2022 Avion LTD</p>
-                <ul class="cosial-list">
+                <ul class="social-list">
                     <li class="social-list-item">
                         <a href="" class="social-list-link">
                             <svg class="social-svg" width="24" height="24">

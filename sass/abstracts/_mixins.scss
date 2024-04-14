@@ -24,6 +24,11 @@
     color: $col;
 }
 
+@mixin table($l){
+    @extend %table;
+    left: $l;
+}
+
 @mixin desc($breakpoint){
     @media screen and (min-width: $breakpoint){
         @content;

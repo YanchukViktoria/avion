@@ -1,5 +1,5 @@
 .header{
-    padding: 20px 24px;
+    padding: 20px 0 20px 0 ;
 
     &-wrap{
 
@@ -11,17 +11,39 @@
 
     &-container{
         @include positioning(flex, _, space-between, center, _, _);
+
+        @include desc(1440px){
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $br;
+        }
     }
 
     &-wraper{
         @include positioning(flex, _, space-between, center, 28px, _);
+
+        @include desc(1440px){
+            @include positioning(flex, row-reverse, _, center, _, _);
+        }
     }
 }
 
 .search-container{
     @include positioning(flex, _, _, center, _, _);
+
+    @include desc(1440px){
+        @include positioning(flex, row-reverse, _, center, _, _);
+    }
 }
 
-.user-tools{
+.user-list{
     display: none;
+
+    @include desc(1440px){
+        @include positioning(flex, _, _ ,center, 16px, _);
+    }
+
+    &-listing{  //on listing page
+        @include positioning(flex, _, _, _, _, _);
+    }
 }

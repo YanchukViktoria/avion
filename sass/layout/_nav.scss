@@ -1,10 +1,10 @@
 .nav{
-    display: none;
 
     &-list{
+        display: none;
 
-        &-item{
-
+        @include desc(1440px){
+            @include positioning(flex, _, center, center, 44px, _);
         }
 
         &-link{

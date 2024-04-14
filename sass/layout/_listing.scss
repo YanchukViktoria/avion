@@ -4,6 +4,15 @@
     &-title{
         @include font-style(Clash Display, 20px, 400, 1.4, _, _, $dark-primary);
         margin-bottom: 19px;
+
+        @include desc(1440px){
+            @include font-style(Clash Display, 32px, 400, 1.2, _, _, $dark-primary);
+            margin-bottom: 33px;
+        }
+    }
+
+    @include desc(1440px){
+        padding: 80px 0 56px 0;
     }
 }
 
@@ -13,12 +22,34 @@
 
     &-item{
         max-width: 163px;
+
+        @include desc(1440px){
+            max-width: fit-content;
+
+            &:nth-child(1){
+                order: 2;
+            }
+            &:nth-child(2){
+                order: 4;
+            }
+            &:nth-child(3){
+               order: 3; 
+            }
+            &:nth-child(4){
+                order: 1;
+            }
+        }
     }
 
     &-img{
         width: 163px;
         height: 201px;
         margin-bottom: 24px;
+
+        @include desc(1440px){
+            width: 305px;
+            height: 375px;
+        }
     }
 
     &-title{
@@ -28,5 +59,17 @@
 
     &-price{
         @include font-style( Satoshi, 18px, 400, 1.5, _, _, $dark-primary);
+    }
+
+    @include desc(1440px){
+        @include positioning(flex, _, _, _, 20px, _);
+        margin-bottom: 51px;
+    }
+}
+
+.listing-container{
+@include desc(1440px){
+    max-width: 1280px;
+    margin: 0 auto;
     }
 }

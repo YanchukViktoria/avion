@@ -1,0 +1,28 @@
+.table{
+    margin-top: 16px;
+    
+    &-body{
+        @include positioning(flex, _, _, _, 103px, _);
+    }
+
+    &-row{
+        @include positioning(flex, column, _, _, 15px, _);
+        position: relative;
+
+        &:nth-child(even)::before{
+            @include table(-51px);
+        }
+
+        &:nth-child(even)::after{
+            @include table(102px);
+        }
+    }
+
+    &-title{
+        @include font-style( Clash Display, 14px, 400, 1.5, _, center, $dark-primary);
+    }
+
+    &-desc{
+        @include font-style( Satoshi, 14px, 400, 1.5, _, center, $dark-primary);
+    }
+}

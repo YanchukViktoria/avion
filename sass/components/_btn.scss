@@ -1,14 +1,30 @@
 .burger-btn{
     margin-left: 20px;
     background-color: inherit;
+
+    @include desc(1440px){
+        display: none;
+    }
 }
 
 .hero-btn{
     @include btn(16px 118px, $clear, $white);
+
+    @include desc(1440px){
+        order: 2;
+        max-width: 170px;
+        padding: 16px 32px;
+    }
 }
 
 .listing-btn, .popular-btn{
-        @include btn(16px 118px, $bg, $dark-primary);
+    @include btn(16px 118px, $bg, $dark-primary);
+    display: block;
+    margin: 0 auto;
+
+    @include desc(1440px){
+        padding: 16px 32px;
+    }
 }
 
 .email-btn{
@@ -16,9 +32,17 @@
 }
 
 .features-btn{
-        @include btn(16px 128px, $bg, $dark-primary);
+    @include btn(16px 128px, $bg, $dark-primary);
+
+    @include desc(1440px){
+        padding: 16px 32px;
+    }
 }
 
 .join-btn{
         @include btn(16px 32px, $white, $dark-primary);
+}
+
+.product-btn{
+    @include btn(16px 131px, $dark-primary, $white);
 }

@@ -3,3 +3,13 @@
     padding: 16px 118px;
     background-color: $bg;
 }
+
+%table{
+    content: "";
+    display: block;
+    border: 1px solid $br;
+    height: 44px;
+    width: 1px;
+    position: absolute;
+    top: 6px;
+}

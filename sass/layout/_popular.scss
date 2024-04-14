@@ -4,6 +4,15 @@
     &-title{
         @include font-style(Clash Display, 20px, 400, 1.4, _, _, $dark-primary);
         margin-bottom: 36px;
+
+        @include desc(1440px){
+            @include font-style(Clash Display, 32px, 400, 1.3, _, _, $dark-primary);
+            margin-bottom: 25px;
+        }
+    }
+
+    @include desc(1440px){
+        padding: 64px 0 48px 0;
     }
 }
 
@@ -13,12 +22,19 @@
     scrollbar-width: none;
     margin-bottom: 32px;
 
-    &-item{
-
+     &-item:nth-child(-n+2){
+        @include desc(1440px){
+            display: none;
+        }
     }
 
     &-img{
        height: 251px; 
+
+       @include desc(1440px){
+        height: 375px;
+        margin-bottom: 24px;
+       }
     }
 
     &-title{
@@ -27,5 +43,16 @@
 
     &-price{
         @include font-style( Satoshi, 18px, 400, 1.5, _, _, $dark-primary);
+    }
+
+    @include desc(1440px){
+        overflow-y: unset;
+    }
+}
+
+.popular-container{
+    @include desc(1440px){
+        max-width: 1280px;
+        margin: 0 auto;
     }
 }

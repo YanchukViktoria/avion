@@ -1,16 +1,35 @@
     // header serch
 .serch-form{
     @include positioning(flex, _, _, center, _, _);
+
+    @include desc(1440px){
+        @include positioning(flex, row-reverse, _, center, _, _);
+    }
 }
 
 .serch-input{
     border: none;
+    outline: none;
+
+    &:focus-within{
+        outline: none;
+        color: $dark-primary;
+    }
+}
+
+.serch-btn{
+    background-color: inherit;
 }
 
     //section-email
 .email-form{
     background-color: $bg;
     display: flex;
+    
+    @include desc(1440px){
+        margin: 72px auto 0 auto;
+        max-width: 472px;
+    }
 }
 
 .email-input{
@@ -32,6 +51,10 @@
 .join-form{
     @include positioning(flex, _, _, center, _, _);
     background-color: $footer-form;
+
+    @include desc(1440px){
+        min-width: 627px;
+    }
 }
 
 .join-input{
@@ -41,5 +64,10 @@
 
     &::placeholder{
         color: $white;
+    }
+
+    &:focus-within{
+        outline: none;
+        color: $placeholder;
     }
 }
