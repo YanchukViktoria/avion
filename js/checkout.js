@@ -1,3 +1,9 @@
+const select = document.getElementById("checkout-select");
+const optionCard = document.getElementById("checkout-select-card");
+const formContainer = document.getElementById("form-container")
+
+
+
 
 let user = JSON.parse(localStorage.getItem("user")) || [];
 
@@ -68,48 +74,6 @@ cart.forEach(product => {
     sourceJpegList.srcset = `${product.imageJpeg}`;
 });
 
-console.log(cart);
-
-const btn = document.getElementById("submit-btn");
-const mail = document.getElementById("email");
-const phone = document.getElementById("phone");
-const firstName = document.getElementById("firstName");
-const lastName = document.getElementById("lastName");
-
-btn.addEventListener("click", Submit);
-
-const orderId = generateOrderId();
-
-function generateOrderId() {
-    const now = new Date();
-    return now.getFullYear().toString() +
-        (now.getMonth() + 1).toString().padStart(2, '0') +
-        now.getDate().toString().padStart(2, '0');
-}
-
-const fields = [btn, mail, phone, firstName, lastName]
-
-function Submit() {
-    for (let i = 0; i < fields.length; i++){
-        if (!fields[i].value) {
-            fields[i].focus();
-        }
-        if (fields[i].value && fields[i +1].value && fields[i+2].value && fields[i+3].value) {
-            let user = JSON.parse(localStorage.getItem('user')) || [];
-            user.push({
-                mail: mail.value,
-                phone: phone.value,
-                firstName: firstName.value,
-                lastName: lastName.value,
-                order: orderId
-            });
-            localStorage.setItem('user', JSON.stringify(user));
-            window.location.href = './thanks.html?orderId=' + orderId;
-        }
-    }
-}
-
-console.log(orderId);
 ///
 
 
@@ -141,9 +105,7 @@ if (totalValue <= 300) {
 
 
 ///
-const select = document.getElementById("checkout-select");
-const optionCard = document.getElementById("checkout-select-card");
-const formContainer = document.getElementById("form-container")
+
 
 const div = document.createElement("div");
 div.className = "card-container";
@@ -157,6 +119,8 @@ select.insertAdjacentElement('afterend', div);
 
 const cardNum = document.createElement("input");
 cardNum.className = 'focused-element-dynamic';
+cardNum.type = 'number'
+cardNum.id = 'card-num'
 cardNum.style.minWidth = '400px';
 cardNum.placeholder = 'Card number';
 cardNum.style.backgroundColor ='inherit';
@@ -166,6 +130,8 @@ div.appendChild(cardNum);
 
 const cardYear = document.createElement("input");
 cardYear.className = 'focused-element-dynamic';
+cardYear.type = 'number'
+cardYear.id = 'card-year'
 cardYear.style.maxWidth = '100px';
 cardYear.placeholder = 'MM/YY';
 cardYear.style.backgroundColor ='inherit';
@@ -175,6 +141,8 @@ div.appendChild(cardYear);
 
 const cardCvc = document.createElement("input");
 cardCvc.className = 'focused-element-dynamic';
+cardCvc.type = 'number'
+cardCvc.id = 'card-cvc'
 cardCvc.style.maxWidth = '100px';
 cardCvc.placeholder = 'CVC';
 cardCvc.style.backgroundColor ='inherit';
@@ -189,3 +157,64 @@ select.addEventListener("change", function() {
         div.style.display = 'none'; 
     }
 });
+
+///
+
+const btn = document.getElementById("submit-btn");
+const mail = document.getElementById("email");
+const phone = document.getElementById("phone");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+
+const cardNumber = document.getElementById("card-num")
+const cardYEAR = document.getElementById("card-year")
+const cardCVC = document.getElementById("card-cvc")
+
+const cardContainer = [cardNumber, cardYEAR, cardCVC];
+
+btn.addEventListener("click", Submit);
+
+const orderId = generateOrderId();
+
+function generateOrderId() {
+    const now = new Date();
+    return now.getFullYear().toString() +
+        (now.getMonth() + 1).toString().padStart(2, '0') +
+        now.getDate().toString().padStart(2, '0');
+}
+
+const fields = [btn, mail, phone, firstName, lastName]
+
+function Submit() {
+    for (let i = 0; i < fields.length; i++){
+        if (!fields[i].value) {
+            fields[i].focus();
+        }
+        
+        if (!mail.value.includes('@')) {
+            mail.focus();
+            return;
+        }
+
+        if (select.value === 'Card') {
+            for (let j = 0; j < cardContainer.length; j++){
+                if (!cardContainer[j].value) {
+                    cardContainer[j].focus();
+                    return;
+                }
+            }
+        }
+
+        let user = JSON.parse(localStorage.getItem('user')) || [];
+        user.push({
+            mail: mail.value,
+            phone: phone.value,
+            firstName: firstName.value,
+            lastName: lastName.value,
+            order: orderId
+        });
+
+        localStorage.setItem('user', JSON.stringify(user));
+        window.location.href = './thanks.html?orderId=' + orderId;
+    }
+}
