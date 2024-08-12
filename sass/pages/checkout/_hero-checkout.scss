@@ -1,0 +1,21 @@
+.section-hero-checkout{
+    background-color: $main-btn;
+}
+
+.cost-list{
+    border-bottom: 1px solid #ebe8f4;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    @include positioning(flex, column, _, _, 20px, _);
+}
+
+.cost-list-desc{
+    @include positioning(flex, _, space-between, center, _, _);
+}
+.info-container{
+    min-width: 450px;
+}
+
+.products-list-desc-checkout{
+    max-width: none;
+}

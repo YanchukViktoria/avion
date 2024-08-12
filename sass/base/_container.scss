@@ -1,8 +1,31 @@
 .container{
-    max-width: 342px;
     margin: 0 auto;
+    padding: 0 20px;
+    width: 390px;
 
     @include desc(1440px){
-        max-width: 1386px;
+        padding: 0 28px;
+        width: 1384px;
     }
+
+    &-hero-product{
+        @include desc(1440px){
+            @include positioning(flex, _, flex-start, _, 67px, _,);
+        }
+    }
+
+    &-hero-checkout{
+        @include desc(1440px){
+            background-color: white;
+            padding: 60px;
+            @include positioning(flex, _, space-between, _, _, _,);
+        }
+    }
+
+    &-hero-thanks{
+        background-color: $main-btn;
+        padding: 60px;
+        text-align: center;
+    }
+
 }

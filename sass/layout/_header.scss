@@ -1,38 +1,21 @@
 .header{
-    padding: 20px 0 20px 0 ;
-
-    &-wrap{
-
-    }
-
-    &-wrap{
-
-    }
-
-    &-container{
-        @include positioning(flex, _, space-between, center, _, _);
-
-        @include desc(1440px){
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid $br;
-        }
-    }
-
-    &-wraper{
-        @include positioning(flex, _, space-between, center, 28px, _);
-
-        @include desc(1440px){
-            @include positioning(flex, row-reverse, _, center, _, _);
-        }
-    }
+    padding: 20px 0;
 }
 
-.search-container{
-    @include positioning(flex, _, _, center, _, _);
+.header-wrap{
+    @include positioning(flex, row-reverse, space-between, center, _ ,_);
 
     @include desc(1440px){
-        @include positioning(flex, row-reverse, _, center, _, _);
+        @include positioning(flex, row, _, center, _, _);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $header-br;
+    }
+
+    &-product{
+        border: none;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -40,10 +23,19 @@
     display: none;
 
     @include desc(1440px){
-        @include positioning(flex, _, _ ,center, 16px, _);
-    }
+        @include positioning(flex, _, center, center, 16px, _);
 
-    &-listing{  //on listing page
-        @include positioning(flex, _, _, _, _, _);
+        &-product{
+            order: 1;
+        }
+    }
+}
+
+.header-tools{
+    @include positioning(flex, _, _, center, 20px, _);
+
+    &-product{
+        order: 1;
+        margin-right: 16px;
     }
 }

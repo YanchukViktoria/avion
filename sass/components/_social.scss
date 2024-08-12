@@ -1,0 +1,32 @@
+.social-list{
+    display: none;
+
+    &-link{
+        color: $main-white;
+    }
+
+    @include desc(1440px){
+        @include positioning(flex, _, flex-end, center, 24px, _);
+    }
+
+    &-product{
+        @include positioning(flex, _, _, _, 24px, wrap);
+        max-width: 120px;
+
+        @include desc(1440px){
+            max-width: none;
+        }
+    }
+
+    &-bottom-product{
+        display: none;
+    }
+}
+
+.social-title{
+    font-size: 16px;
+    @include lh(20, 16);
+    font-weight: 400;
+    color: $main-white;
+    margin-bottom: 29px;
+}

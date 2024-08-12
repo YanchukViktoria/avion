@@ -1,0 +1,48 @@
+.section-mailimg{
+    padding: 48px 0 38px 0;
+
+
+    @include desc(1440px){
+        padding: 52px 0 65px 0;
+        background-color: $mailing-bg;
+    }
+}
+
+.mailing-container{
+    @include desc(1440px){
+            padding: 68px 0 54px 0;
+        background-color: white;
+    }
+}
+
+.mailimg-title{
+    font-size: 20px;
+    @include lh(28, 20);
+    color: $main-dark;
+    font-weight: 400;
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    @include desc(1440px){
+        font-size: 36px;
+        @include lh(50, 36);
+    }
+}
+
+.mailing-desc{
+    font-size: 14px;
+    @include lh(21, 14);
+    color: $main-dark;
+    font-weight: 400;
+    text-align: center;
+
+    margin-bottom: 64px;
+
+    @include desc(1440px){
+        font-size: 16px;
+        @include lh(24, 16);
+        max-width: 470px;
+        margin: 0 auto 72px auto;
+    }
+}

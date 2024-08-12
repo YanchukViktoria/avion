@@ -1,0 +1,56 @@
+.section-mailimg-product{
+    padding: 394px 0 46px 0;
+
+    @include bg-image("../main/mb-webp/product-webp/bg-mailing-mb.webp", "../main/mb/product/bg-mailing-mb.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+
+    // @include retina(2,192dpi,2dppx) {
+    //     @include bg-image("../main/desc-webp/mian-webp/bg-main-desc-2x.webp", "../main/desc/main/bg-main-desc-3x.j");
+    // }
+    
+    // @include retina(3,288dpi,3dppx) {
+    //     @include bg-image("../main/desc-webp/mian-webp/bg-main-desc-2x.webp", "../main/desc/main/bg-main-desc-3x.j");
+    // }
+
+    @include desc(1440px){
+        padding: 71px 0 70px 0;
+        background-color: inherit;
+
+        @include bg-image("../main/desc-webp/product-webp/bg-mailing-desc.webp", "../main/desc/product/bg-mailing-desc.j");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+
+        // @include retina(2,192dpi,2dppx) {
+        //     @include bg-image("../main/desc-webp/mian-webp/bg-main-desc-2x.webp", "../main/desc/main/bg-main-desc-3x.j");
+        // }
+        
+        // @include retina(3,288dpi,3dppx) {
+        //     @include bg-image("../main/desc-webp/mian-webp/bg-main-desc-2x.webp", "../main/desc/main/bg-main-desc-3x.j");
+        // }
+    }
+}
+
+.mailing-wrapper{
+    @include desc(1440px){
+        @include positioning(flex, column, _, space-between, _, _);
+        min-height: 380px;
+    }
+}
+
+.mailing-container-product{
+    background-color: inherit;
+    @include positioning(flex, column, _, flex-end, _, _);
+}
+
+.mailing-desc-product{
+    margin: 0;
+    text-align: left;
+}
+
+.mailing-form-product{
+    min-width: 472px;
+    margin: 0;
+}

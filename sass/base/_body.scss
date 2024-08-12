@@ -1,0 +1,18 @@
+body{
+    font-family: Clash Display;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.img{
+    height: 201px;
+
+    &-popular{
+        height: 251px;
+    }
+
+    @include desc(1440px){
+        height: 375px;
+    }
+
+}

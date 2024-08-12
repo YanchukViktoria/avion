@@ -6,18 +6,32 @@
 @import "./base/body";
 @import "./base/container";
 
-@import "./components/logo";
-@import "./components/forms";
 @import "./components/btn";
-@import "./components/table";
+@import "./components/logo";
+@import "./components/form";
+@import "./components/social";
+@import "./components/burger";
+@import "./components/nav";
+@import "./components/feautures";
 
-@import "./layout/header";
-@import "./layout/nav";
-@import "./layout/hero";
-@import "./layout/hero-listing";
-@import "./layout/characteristics";
-@import "./layout/listing";
-@import "./layout/popular";
-@import "./layout/email";
-@import "./layout/features";
 @import "./layout/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/info";
+@import "./layout/mailing";
+@import "./layout/popular";
+
+
+@import "./pages/main/main-hero";
+@import "./pages/main/main-new";
+
+
+@import "./pages/bascet/bascet-hero";
+
+@import "./pages/product/product-hero";
+@import "./pages/product/product-footer";
+@import "./pages/product/product-mailing";
+
+@import "./pages/checkout/hero-checkout";
+
+@import "./pages/thanks/thanks-hreo";

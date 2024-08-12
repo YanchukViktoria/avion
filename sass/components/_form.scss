@@ -1,0 +1,96 @@
+/* mailing form */
+
+.mailing-form{
+    position: relative;
+    @include positioning(flex, _, center, center, _, _);
+
+
+    @include desc(1440px){
+        max-width: 472px;
+        margin: 0 auto;
+    }
+}
+
+.mailing-input{
+    width: 100%;
+    background-color: $main-light-bg;
+    color: $main-light;
+    border: none;
+    padding: 19px 0 19px 32px;
+
+    &::placeholder{
+        color: $main-light;
+    }
+
+    &:focus-within{
+        outline: none;
+        border: none;
+    }
+}
+
+
+/* footer mailing form */
+
+.footer-mailing-form{
+    position: relative;
+
+    @include desc(1440px){
+        min-width: 627px;
+    }
+}
+
+.footer-mailing-input{
+    width: 100%;
+    background-color: $footer-form-bg;
+    color: $main-light;
+    border: none;
+    padding: 19px 0 19px 32px;
+
+    &::placeholder{
+        color: $main-white;
+    }
+
+    &:focus-within{
+        outline: none;
+        border: none;
+    }
+}
+
+/* checkout form */
+
+.checkout-form{
+    max-width: 600px;
+    margin-bottom: 40px;
+    @include positioning(flex, _ , _ , _, 30px 40px, wrap);
+
+    &-input{
+        height: 50px;
+        flex: 1;
+        background-color: $main-btn;
+        border-radius: 0;
+        border: none;
+        padding: 17px 20px;
+
+        &-address{
+            flex: 3;
+            width: 100%;
+        }
+    }
+}
+
+.checkout-select{
+    width: 600px;
+    padding: 17px 20px;
+    background-color: $main-btn;
+    max-height: 50px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.focused-element:focus-within{
+    outline: 1px solid rgba(42, 37, 75, 1);
+}
+
+.focused-element-dynamic:focus-within{
+    outline: none;
+}

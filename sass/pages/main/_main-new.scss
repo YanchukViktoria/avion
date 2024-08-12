@@ -1,0 +1,59 @@
+.section-new{
+    padding: 48px 0 38px 0;
+
+    @include desc(1440px){
+        padding: 80px 0 56px 0;
+    }
+}
+
+
+
+.new-title{
+    font-size: 20px;
+    @include lh(25, 20);
+    color: $main-dark;
+    font-weight: 400;
+
+    margin-bottom: 19px;
+
+    @include desc(1440px){
+        font-size: 32px;
+        @include lh(39, 32);
+        margin-bottom: 33px;
+    }
+}
+
+.new-list{
+    @include positioning(flex, _, center, center, 20px 15px, wrap);
+    margin-bottom: 29px;
+
+
+    &-item{
+
+    }
+
+    &-link{
+
+    }
+
+    &-title{
+        font-size: 20px;
+        @include lh(28, 20);
+        color: $main-dark;
+        font-weight: 400;
+
+        margin: 24px 0 8px 0;
+    }
+
+    &-price{
+        font-size: 18px;
+        @include lh(27, 18);
+        color: $main-dark;
+        font-weight: 400;
+    }
+
+    @include desc(1440px){
+        margin-bottom: 35px;
+        @include positioning(flex, _, space-between, center, _, _);
+    }
+}

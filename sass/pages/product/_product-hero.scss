@@ -1,0 +1,150 @@
+.section-hero-product{
+    @include bg-image("../main/mb-webp/main-webp/listing-chair-dandy-main-mb-1x.webp", "../main/mb/main/listing-chair-dandy-main-mb-1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto 380px;
+    background-color: $mailing-bg;
+
+    padding: 408px 0 30px 0;
+
+    @include retina(2,192dpi,2dppx) {
+        @include bg-image("../main/mb-webp/main-webp/listing-chair-dandy-main-mb-2x.webp", "../main/mb/main/listing-chair-dandy-main-mb-2x.jpg");
+    }
+    
+    @include retina(3,288dpi,3dppx) {
+        @include bg-image("../main/mb-webp/main-webp/listing-chair-dandy-main-mb-3x.webp", "../main/mb/main/listing-chair-dandy-main-mb-3x.jpg");
+    }
+
+    @include desc(1440px){
+        padding: 50px 0 47px 0;
+        background-image: none;
+    }
+}
+
+.product-wrapper{
+    margin-top: 31px;
+}
+
+.product-name{
+    font-size: 24px;
+    @include lh(34, 24);
+    font-weight: 400;
+    color: $main-dark;
+    margin-bottom: 12px;
+
+    @include desc(1440px){
+        font-size: 36px;
+        @include lh(44, 36);
+        margin-bottom: 16px;
+    }
+}
+
+.product-price{
+    font-size: 20px;
+    @include lh(28, 20);
+    font-weight: 400;
+    color: $main-dark;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $product-and-cart-br;
+    margin-bottom: 28px;
+
+    @include desc(1440px){
+        font-size: 24px;
+        @include lh(32, 24);
+        padding-bottom: 28px;
+        margin-bottom: 24px;
+    }
+}
+
+.product-desc{
+    font-size: 20px;
+    @include lh(28, 20);
+    font-weight: 400;
+    color: $main-dark;
+}
+
+.hero-desc-title{
+    font-size: 16px;
+    @include lh(25, 16);
+    font-weight: 400;
+    color: $main-dark;
+    margin-bottom: 12px;
+}
+
+.product-desc{
+    font-size: 14px;
+    @include lh(21, 14);
+    font-weight: 400;
+    color: $main-dark;
+    margin-bottom: 28px;
+}
+
+.product-table{
+    border-top: 1px solid $product-and-cart-br;
+    padding-top: 16px;
+    margin-bottom: 28px;
+    width: 100%;
+    @include positioning(flex, _, _, _, _, _);
+
+    &-body{
+        width: 100%;
+        @include positioning(flex, column, _, _, 15px, _);
+    }
+
+    &-tr{
+        @include positioning(flex, _,space-between, center, 109px,_);
+    }
+
+    &-th{
+        font-size: 14px;
+        @include lh(20, 14);
+        font-weight: 400;
+        color: $main-dark;
+        position: relative;
+
+        &:first-child::after{
+            content: "";
+            position: absolute;
+            left: 100px;
+            
+            border-right: 1px solid $product-and-cart-br;
+            height: 44px;
+        }
+
+        &:last-child::after{
+            content: "";
+            position: absolute;
+            right: 100px;
+            
+            border-right: 1px solid $product-and-cart-br;
+            height: 44px;
+        }
+    }
+
+    &-td{
+        font-size: 14px;
+        @include lh(21, 14);
+        font-weight: 400;
+        color: $main-dark;
+    }
+
+    @include desc(1440px){
+        max-width: 324px;
+        border-top: none;
+    }
+}
+
+.product-img{
+    display: none;
+
+    @include desc(1440px){
+        display: block;
+        width: 607px;
+    }
+}
+
+.product-btn-wrapper{
+    @include desc(1440px){
+        @include positioning(flex, row-reverse, flex-end, _, 16px, _);
+    }
+}

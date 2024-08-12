@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avion</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400&f[]=satoshi@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap header-wrap-product">
+                <div class="header-tools header-tools-product">
+                    <button class="header-btn header-btn-serch">
+                        <svg class="svg" width="16" height="16">
+                            <use href="./symbol-defs.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                    <button class="header-btn menu-open-btn">
+                        <svg class="svg" width="16" height="16">
+                            <use href="./symbol-defs.svg#icon-burger"></use>
+                        </svg>
+                    </button>
+                </div>
+    
+                    <a href="./index.html" class="logo">Avion</a>
+
+                    <nav class="nav nav-product">
+                        <ul class="nav-list">
+                            <li class="nav-list-item"><a href="#" class="nav-list-link">Plant pots</a></li>
+                            <li class="nav-list-item"><a href="#" class="nav-list-link">Ceramics</a></li>
+                            <li class="nav-list-item"><a href="#" class="nav-list-link">Tables</a></li>
+                            <li class="nav-list-item"><a href="#" class="nav-list-link">Chairs</a></li>
+                            <li class="nav-list-item"><a href="#" class="nav-list-link">Crockery</a></li>
+                            <li class="nav-list-item"><a href="#" class="nav-list-link">Tableware</a></li>
+                            <li class="nav-list-item"><a href="#" class="nav-list-link">Cutlery</a></li>
+                        </ul>
+                    </nav>
+    
+                    <ul class="user-list user-list-product">
+                        <li class="user-list-item">
+                            <button class="user-list-btn">
+                                <a href="./bascet.html" class="header-link">
+                                    <svg class="svg" width="16" height="16">
+                                        <use href="./symbol-defs.svg#icon-cart"></use>
+                                    </svg>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="user-list-item">
+                            <button class="user-list-btn">
+                                <svg class="svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-user-acount"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <div class="menu-top">
+                    <button class="menu-btn menu-close-btn">
+                        <svg class="svg" width="16" height="16">
+                            <use href="./symbol-defs.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <nav class="burger-nav">
+                        <ul class="burger-nav-list">
+                            <li class="burger-nav-list-item"><a href="#" class="burger-nav-list-link">Home</a></li>
+                            <li class="burger-nav-list-item"><a href="#" class="burger-nav-list-link">Products</a></li>
+                            <li class="burger-nav-list-item"><a href="#" class="burger-nav-list-link">About us</a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="burger-user-list">
+                        <li class="burger-user-list-item">
+                            <button class="burger-user-list-btn">
+                                <a href="./bascet.html" class="header-link">
+                                    <svg class="svg" width="16" height="16">
+                                        <use href="./symbol-defs.svg#icon-cart"></use>
+                                    </svg>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="burger-user-list-item">
+                            <button class="burger-user-list-btn">
+                                <svg class="svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-user-acount"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-bottom">
+                    <ul class="burger-social-list">
+                        <li class="burger-social-list-item">
+                            <a href="#" class="burger-social-list-link">
+                                <svg class="svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-social-sec"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger-social-list-item">
+                            <a href="#" class="burger-social-list-link">
+                                <svg class="svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-social-third"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger-social-list-item">
+                            <a href="#" class="burger-social-list-link">
+                                <svg class="svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-social-fifth"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger-social-list-item">
+                            <a href="#" class="burger-social-list-link">
+                                <svg class="svg" width="16" height="16">
+                                    <use href="./symbol-defs.svg#icon-social-sixth"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-hero-product">
+            <div class="container container-hero-product">
+                <picture id="picture">
+                    <source id="source-webp" media="min-width:1440px" srcset="" type="image/webp">
+                    <source id="source-jpeg" media="min-width:1440px" srcset="" type="image/jpeg">
+
+                    <img class="product-img product-img-js" id="" src="./main/desc/main/listing-chair-main-desc-1x.jpg" alt="">
+                </picture>
+                <div class="product-wrapper">
+                    <h1 class="product-name" id="product-name"></h1>
+                    <p class="product-price" id="product-price"></p>
+    
+                    <p class="hero-desc-title">Product description</p>
+                    <p class="product-desc">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+    
+                    <p class="hero-desc-title">Dimensions</p>
+                    <table class="product-table">
+                        <tbody class="product-table-body">
+                            <tr class="product-table-tr">
+                                <th class="product-table-th">Height</th>
+                                <th class="product-table-th">Width</th>
+                                <th class="product-table-th">Depth</th>
+                            </tr>   
+                            <tr class="product-table-tr">
+                                <td class="product-table-td">110cm</td>
+                                <td class="product-table-td">75cm</td>
+                                <td class="product-table-td">50cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                    <p class="hero-desc-title">Quantitity</p>
+    
+                    <div class="products-container products-container-products">
+                        <button class="products-btn">-</button>
+                        <span>1</span>
+                        <button class="products-btn">+</button>
+                    </div>
+    
+                    <div class="product-btn-wrapper">
+                        <button class="hero-btn hero-btn-product hero-btn-product-top">Save to favorites</button>
+                        <button class="hero-btn hero-btn-product hero-btn-product-bottom" id="cart-btn">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-popular">
+            <div class="container">
+                <div>
+                    <h2 class="popular-title">You might also love these</h2>
+
+                    <ul class="popular-list">
+                        <li class="popular-list-item">
+                            <a href="#" class="popular-list-link">
+                                <picture>
+                                    <source media="(min-width:390px)" srcset="./main/desc-webp/mian-webp/listing-lamp-lucy-desc-1x.webp 1x, ./main/desc-webp/mian-webp/listing-lamp-lucy-desc-2x.webp 2x, ./main/desc-webp/mian-webp/listing-lamp-lucy-desc-3x.webp 3x" type="image/webp">
+                                    <source media="(min-width:390px)" srcset="./main/desc/main/listing-lamp-lucy-desc-1x.jpg 1x, ./main/desc/main/listing-lamp-lucy-desc-2x.jpg 2x, ./main/desc/main/listing-lamp-lucy-desc-3x.jpg 3x" type="image/jpeg">
+    
+                                    <source media="(max-width:1440px)" srcset="./main/mb-webp/main-webp/listing lamp-lucy-mb-1x.webp 1x, ./main/mb-webp/main-webp/listing lamp-lucy-mb-2x.webp 2x, ./main/mb-webp/main-webp/listing lamp-lucy-mb-3x.webp 3x" type="image/webp">
+                                    <source media="(max-width:1440px)" srcset="./main/mb/main/listing-lamp-lucy-mb-1x.jpg 1x, ./main/mb/main/listing-lamp-lucy-mb-1x.jpg 2x, ./main/mb/main/listing-lamp-lucy-mb-3x.jpg 3x" type="image/jpeg">
+    
+                                    <img class="img img-popular" src="./main/mb/main/listing-lamp-lucy-mb-1x.jpg" alt="">
+                                </picture>
+                                <p class="popular-list-title">The Lucy Lamp</p>
+                                <p class="popular-list-price">£399</p>
+                            </a>
+                        </li>
+                        <li class="popular-list-item">
+                            <a href="#" class="popular-list-link">
+                                <picture>
+                                    <source media="(min-width:390px)" srcset="./main/desc-webp/mian-webp/listing-chair-main-desc-1x.webp 1x, ./main/desc-webp/mian-webp/listing-chair-main-desc-2x.webp 2x, ./main/desc-webp/mian-webp/listing-chair-main-desc-3x.webp 3x" type="image/webp">
+                                    <source media="(min-width:390px)" srcset="./main/desc/main/listing-chair-main-desc-1x.jpg 1x, ./main/desc/main/listing-chair-main-desc-2x.jpg 2x, ./main/desc/main/listing-chair-main-desc-3x.jpg 3x" type="image/jpeg">
+        
+                                    <source media="(max-width:1440px)" srcset="./main/mb-webp/main-webp/listing-chair-dandy-main-mb-1x.webp 1x, ./main/mb-webp/main-webp/listing-chair-dandy-main-mb-2x.webp 2x, ./main/mb-webp/main-webp/listing-chair-dandy-main-mb-3x.webp 3x" type="image/webp">
+                                    <source media="(max-width:1440px)" srcset="./main/mb/main/listing-chair-dandy-main-mb-1x.jpg 1x, ./main/mb/main/listing-chair-dandy-main-mb-2x.jpg 2x, ./main/mb/main/listing-chair-dandy-main-mb-3x.jpg 3x" type="image/jpeg">
+        
+                                    <img class="img img-popular" src="./main/mb/main/listing-chair-dandy-main-mb-1x.jpg" alt="">
+                                </picture>
+                                <p class="popular-list-title">The Dandy chair</p>
+                                <p class="popular-list-price">£250</p>
+                            </a>
+                        </li>
+                        <li class="popular-list-item">
+                            <a href="#" class="popular-list-link">
+                                <picture>
+                                    <source media="(min-width:390px)" srcset="./main/desc-webp/mian-webp/listing-sofa-suede-desc-1x.webp 1x, ./main/desc-webp/mian-webp/listing-sofa-suede-desc-2x.webp 2x, ./main/desc-webp/mian-webp/listing-sofa-suede-desc-3x.webp 3x" type="image/webp">
+                                    <source media="(min-width:390px)" srcset="./main/desc/main/listing-sofa-suede-desc-1x.jpg 1x, ./main/desc/main/listing-sofa-suede-desc-2x.jpg 2x, ./main/desc/main/listing-sofa-suede-desc-3x.jpg 3x" type="image/jpeg">
+        
+                                    <source media="(max-width:1440px)" srcset="./main/mb-webp/main-webp/listing-vase-rustic-mb-1x.webp 1x, ./main/mb-webp/main-webp/listing-vase-rustic-mb-2x.webp 2x, ./main/mb-webp/main-webp/listing-vase-rustic-mb-3x.webp 3x" type="image/webp">
+                                    <source media="(max-width:1440px)" srcset="./main/mb/main/listing-vase-rustic-mb-1x.jpg 1x, ./main/mb/main/listing-vase-rustic-mb-2x.jpg 2x, ./main/mb/main/ listing-vase-rustic-mb-3x.jpg3x" type="image/jpeg">
+        
+                                    <img class="img img-popular" src="./main/mb/main/listing-vase-rustic-mb-1x.jpg" alt="">
+                                </picture>
+                                <p class="popular-list-title">The Poplar suede sofa</p>
+                                <p class="popular-list-price">£980</p>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <button class="popular-btn">See collection</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-features">
+            <div class="container">
+                <h2 class="features-title">What makes our brand different</h2>
+                <ul class="features-list">
+                    <li class="features-list-item features-list-item-product">
+                        <svg class="svg" width="24" height="24">
+                            <use href="./symbol-defs.svg#icon-fetures-first"></use>
+                        </svg>
+                        <p class="features-list-title">Next day as standard</p>
+                        <p class="features-list-desc">Order before 3pm and get your order the next day as standard</p>
+                    </li>
+                    <li class="features-list-item features-list-item-product">
+                        <svg class="svg" width="24" height="24">
+                            <use href="./symbol-defs.svg#icon-fetures-sec"></use>
+                        </svg>
+                        <p class="features-list-title">Made by true artisans</p>
+                        <p class="features-list-desc">Handmade crafted goods made with real passion and craftmanship</p>
+                    </li>
+                    <li class="features-list-item features-list-item-product">
+                        <svg class="svg" width="24" height="24">
+                            <use href="./symbol-defs.svg#icon-fetures-third"></use>
+                        </svg>
+                        <p class="features-list-title">Unbeatable prices</p>
+                        <p class="features-list-desc">For our materials and quality you won’t find better prices anywhere</p>
+                    </li>
+                    <li class="features-list-item features-list-item-product">
+                        <svg class="svg" width="24" height="24">
+                            <use href="./symbol-defs.svg#icon-fetures-fourth"></use>
+                        </svg>
+                        <p class="features-list-title">Recycled packaging</p>
+                        <p class="features-list-desc">We use 100% recycled packaging to ensure our footprint is manageable</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <img src="" alt="">
+        <section class="section-mailimg section-mailimg-product">
+            <div class="container">
+                <div class="mailing-container mailing-container-product">
+                    <div class="mailing-wrapper">
+                        <h2 class="mailimg-title">Join the club and get the benefits</h2>
+
+                        <p class="mailing-desc mailing-desc-product">Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
+                    </div>
+
+                    <form action="" class="mailing-form mailing-form-product">
+                        <input type="text" placeholder="your@email.com" class="mailing-input">
+                        <button class="mailing-btn">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container footer-container-product">
+                <address>
+                    <a href="./index.html" class="logo footer-logo">Avion</a>
+                    <ul class="address-list">
+                        <li class="address-list-item"><a href="#" class="address-list-link">21 New York Street</a></li>
+                        <li class="address-list-item"><a href="#" class="address-list-link">New York City</a></li>
+                        <li class="address-list-item"><a href="#" class="address-list-link">United States of America</a></li>
+                        <li class="address-list-item"><a href="#" class="address-list-link">432 34</a></li>
+                    </ul>
+                </address>
+                <div class="footer-social">
+                    <p class="social-title">Social links</p>
+
+                    <ul class="social-list social-list-product">
+                        <li class="social-list-item social-list-item-product">
+                            <a href="#" class="social-list-link">
+                                <svg class="svg" width="24" height="24">
+                                    <use href="./symbol-defs.svg#icon-social-first"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item social-list-item-product">
+                            <a href="#" class="social-list-link">
+                                <svg class="svg" width="24" height="24">
+                                    <use href="./symbol-defs.svg#icon-social-sec"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item social-list-item-product">
+                            <a href="#" class="social-list-link">
+                                <svg class="svg" width="24" height="24">
+                                    <use href="./symbol-defs.svg#icon-social-third"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item social-list-item-product">
+                            <a href="#" class="social-list-link">
+                                <svg class="svg" width="24" height="24">
+                                    <use href="./symbol-defs.svg#icon-social-fourth"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="#" class="social-list-link">
+                                <svg class="svg" width="24" height="24">
+                                    <use href="./symbol-defs.svg#icon-social-fifth"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="#" class="social-list-link">
+                                <svg class="svg" width="24" height="24">
+                                    <use href="./symbol-defs.svg#icon-social-sixth"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-container">
+                    <p class="about-title">Our company</p>
+                    <ul class="about-list">
+                        <li class="about-list-item"><a href="#" class="about-list-link">About us</a></li>
+                        <li class="about-list-item"><a href="#" class="about-list-link">Vacancies</a></li>
+                        <li class="about-list-item"><a href="#" class="about-list-link">Contact us</a></li>
+                        <li class="about-list-item"><a href="#" class="about-list-link">Privacy</a></li>
+                        <li class="about-list-item"><a href="#" class="about-list-link">Returns policy</a></li>
+                    </ul>
+                </div>
+                <div class="menu-container">
+                    <p class="menu-title">Menu</p>
+                    <ul class="menu-list">
+                        <li class="menu-list-item"><a href="#" class="menu-list-link">New arrivals</a></li>
+                        <li class="menu-list-item"><a href="#" class="menu-list-link">Best sellers</a></li>
+                        <li class="menu-list-item"><a href="#" class="menu-list-link">Recently viewed</a></li>
+                        <li class="menu-list-item"><a href="#" class="menu-list-link">Popular this week</a></li>
+                        <li class="menu-list-item"><a href="#" class="menu-list-link">All products</a></li>
+                    </ul>
+                </div>
+                <div class="categories-container categories-container-product">
+                    <p class="categories-title">Categoreies</p>
+                    <ul class="categories-list">
+                        <li class="categories-list-item"><a href="#" class="categories-list-link">Crockery</a></li>
+                        <li class="categories-list-item"><a href="#" class="categories-list-link">Furniture</a></li>
+                        <li class="categories-list-item"><a href="#" class="categories-list-link">Homeware</a></li>
+                        <li class="categories-list-item"><a href="#" class="categories-list-link">Plant pots</a></li>
+                        <li class="categories-list-item"><a href="#" class="categories-list-link">Chairs</a></li>
+                        <li class="categories-list-item"><a href="#" class="categories-list-link">Crockery</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-box footer-box-product">
+                <p class="footer-desc footer-desc-product">Copyright 2022 Avion LTD</p>
+
+                <ul class="social-list social-list-bottom-product">
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-link">
+                            <svg class="svg" width="24" height="24">
+                                <use href="./symbol-defs.svg#icon-social-first"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-link">
+                            <svg class="svg" width="24" height="24">
+                                <use href="./symbol-defs.svg#icon-social-sec"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-link">
+                            <svg class="svg" width="24" height="24">
+                                <use href="./symbol-defs.svg#icon-social-third"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-link">
+                            <svg class="svg" width="24" height="24">
+                                <use href="./symbol-defs.svg#icon-social-fourth"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-link">
+                            <svg class="svg" width="24" height="24">
+                                <use href="./symbol-defs.svg#icon-social-fifth"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="#" class="social-list-link">
+                            <svg class="svg" width="24" height="24">
+                                <use href="./symbol-defs.svg#icon-social-sixth"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/product.js" type="module"></script>
+    <script src="./js/btn.js"></script>
+</body>
+</html>

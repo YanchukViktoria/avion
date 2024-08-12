@@ -1,12 +1,26 @@
-@mixin font-style( $ff, $fz, $fw, $lh, $ls, $ta, $color){
-    font-family: $ff;
-    font-size: $fz;
-    font-weight: $fw;
-    line-height: $lh;
-    letter-spacing: $ls;
-    text-align: $ta;
-    color: $color;
+@mixin lh($lh, $fs){
+    $lhe: calc($lh / $fs);
+    line-height: $lhe;
 }
+
+    //adaptive
+
+@mixin desc($breakpoint){
+    @media screen and (min-width: $breakpoint){
+        @content;
+    }
+}
+
+    //bg
+
+@mixin bg-image($webp, $fallback){
+    @supports (background-image: url("#{$webp}")){
+        background-image: url("#{$webp}");
+    }
+    background-image: url("#{$fallback}");
+}
+
+    //positioning
 
 @mixin positioning($disp, $fd, $jc, $al, $gp, $wr){
     display: $disp;
@@ -17,20 +31,13 @@
     flex-wrap: $wr;
 } 
 
-@mixin btn($pd, $bg, $col){
-    @include font-style(Satoshi, 16px, 400, 1.5, _, _, _);
-    padding: $pd;
-    background-color: $bg;
-    color: $col;
-}
+    //retina
 
-@mixin table($l){
-    @extend %table;
-    left: $l;
-}
-
-@mixin desc($breakpoint){
-    @media screen and (min-width: $breakpoint){
-        @content;
+    @mixin retina($dev-ratio, $dpi, $dppx){
+        @media (min-device-pixel-ratio:$dev-ratio),
+        (min-resolution:$dpi),
+        (min-resolution:$dppx)
+        {
+            @content;
+        }
     }
-}

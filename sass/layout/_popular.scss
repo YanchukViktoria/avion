@@ -1,58 +1,58 @@
 .section-popular{
-    padding: 48px 0 38px 0;
-
-    &-title{
-        @include font-style(Clash Display, 20px, 400, 1.4, _, _, $dark-primary);
-        margin-bottom: 36px;
-
-        @include desc(1440px){
-            @include font-style(Clash Display, 32px, 400, 1.3, _, _, $dark-primary);
-            margin-bottom: 25px;
-        }
-    }
+    padding: 48px 0 38px;
 
     @include desc(1440px){
-        padding: 64px 0 48px 0;
+        padding: 64px 0 48px 0;   
+    }
+}
+
+
+.popular-title{
+    font-size: 20px;
+    @include lh(25, 20);
+    color: $main-dark;
+    font-weight: 400;
+
+    margin-bottom: 36px;
+
+    @include desc(1440px){
+        font-size: 32px;
+        @include lh(39, 32);
+        margin-bottom: 25px;
     }
 }
 
 .popular-list{
-    @include positioning(flex, _, _, center, 20px, _);
+    @include positioning(flex, _, _, _, 20px , _);
     overflow-y: scroll;
     scrollbar-width: none;
     margin-bottom: 32px;
 
-     &-item:nth-child(-n+2){
-        @include desc(1440px){
-            display: none;
-        }
+    &-item{
+
     }
 
-    &-img{
-       height: 251px; 
+    &-link{
 
-       @include desc(1440px){
-        height: 375px;
-        margin-bottom: 24px;
-       }
     }
 
     &-title{
-        @include font-style( Clash Display, 20px, 400, 1.4, _, _, $dark-primary);
+        font-size: 20px;
+        @include lh(28, 20);
+        color: $main-dark;
+        font-weight: 400;
+        margin: 24px 0 8px 0;
     }
 
     &-price{
-        @include font-style( Satoshi, 18px, 400, 1.5, _, _, $dark-primary);
+        font-size: 18px;
+        @include lh(27, 18);
+        color: $main-dark;
+        font-weight: 400;
     }
 
     @include desc(1440px){
-        overflow-y: unset;
-    }
-}
-
-.popular-container{
-    @include desc(1440px){
-        max-width: 1280px;
-        margin: 0 auto;
+        margin-bottom: 35px;
+        @include positioning(flex, _, space-between, center, _, _);
     }
 }
